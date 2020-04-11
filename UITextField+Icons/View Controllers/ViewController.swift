@@ -1,5 +1,5 @@
 //
-//  TextFieldIconsViewController.swift
+//  ViewController.swift
 //  UITextField+Icons
 //
 //  Created by Jason Cox on 4/3/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextFieldIconsViewController: UIViewController, UITextFieldDelegate, UITextFieldIconsDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UITextFieldIconsDelegate {
 
     // MARK: - IBOutlets
     @IBOutlet internal var textFieldIconCode1: UITextField_Icons!;

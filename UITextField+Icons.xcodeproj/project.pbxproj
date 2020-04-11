@@ -13,7 +13,7 @@
 		96909BB324369A6700F0330F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96909BB224369A6700F0330F /* Assets.xcassets */; };
 		96909BB624369A6700F0330F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96909BB424369A6700F0330F /* LaunchScreen.storyboard */; };
 		96909BC424369BE400F0330F /* UITextField+Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96909BC324369BE400F0330F /* UITextField+Icons.swift */; };
-		96909BC62437966D00F0330F /* TextFieldIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96909BC52437966D00F0330F /* TextFieldIconsViewController.swift */; };
+		96909BC62437966D00F0330F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96909BC52437966D00F0330F /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		96909BB524369A6700F0330F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96909BB724369A6700F0330F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96909BC324369BE400F0330F /* UITextField+Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Icons.swift"; sourceTree = "<group>"; };
-		96909BC52437966D00F0330F /* TextFieldIconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldIconsViewController.swift; sourceTree = "<group>"; };
+		96909BC52437966D00F0330F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96909BC72437CA7F00F0330F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +74,7 @@
 		96909BBD24369A8A00F0330F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				96909BC52437966D00F0330F /* TextFieldIconsViewController.swift */,
+				96909BC52437966D00F0330F /* ViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96909BC424369BE400F0330F /* UITextField+Icons.swift in Sources */,
-				96909BC62437966D00F0330F /* TextFieldIconsViewController.swift in Sources */,
+				96909BC62437966D00F0330F /* ViewController.swift in Sources */,
 				96909BAA24369A6500F0330F /* AppDelegate.swift in Sources */,
 				96909BAC24369A6500F0330F /* SceneDelegate.swift in Sources */,
 			);
