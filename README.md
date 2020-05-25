@@ -71,4 +71,3 @@ class ViewController: UIViewController, UITextFieldDelegate, UITextFieldIconsDel
 
 ## Known Issues
 * Currently you need to implment `UITextFieldDelegate` alongside `UITextFieldIconsDelegate` in your view controller
-* When using the Trailing Icon is configured, the Clear Button will not appear.

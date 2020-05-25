@@ -117,12 +117,18 @@ extension UITextFieldIconsDelegate
         if (self.leadingIcon != nil) {
             // Set the leading icon
             self.setIcon(side: .Leading, image: self.leadingIcon, color: self.leadingColor, onTapAction: self.leadingTapAction);
+        } else {
+            // Reset the left view to nil
+            self.leftView = nil;
         }
         
         // Check to see if a trailing icon was specified
         if (self.trailingIcon != nil) {
             // Set the trailing icon
             self.setIcon(side: .Trailing, image: self.trailingIcon, color: self.trailingColor, onTapAction: self.trailingTapAction);
+        } else {
+            // Reset the right view to nil
+            self.rightView = nil;
         }
         
         // Indicate that the view needs laid out
