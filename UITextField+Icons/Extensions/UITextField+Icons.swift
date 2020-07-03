@@ -42,8 +42,8 @@ extension UITextFieldIconsDelegate
     // MARK: - Enums
     
     private enum Side {
-        case Leading;
-        case Trailing;
+        case leading;
+        case trailing;
     }
     
     // MARK: - Classes
@@ -116,7 +116,7 @@ extension UITextFieldIconsDelegate
         // Check to see if a leading icon was specified
         if (self.leadingIcon != nil) {
             // Set the leading icon
-            self.setIcon(side: .Leading, image: self.leadingIcon, color: self.leadingColor, onTapAction: self.leadingTapAction);
+            self.setIcon(side: .leading, image: self.leadingIcon, color: self.leadingColor, onTapAction: self.leadingTapAction);
         } else {
             // Reset the left view to nil
             self.leftView = nil;
@@ -125,7 +125,7 @@ extension UITextFieldIconsDelegate
         // Check to see if a trailing icon was specified
         if (self.trailingIcon != nil) {
             // Set the trailing icon
-            self.setIcon(side: .Trailing, image: self.trailingIcon, color: self.trailingColor, onTapAction: self.trailingTapAction);
+            self.setIcon(side: .trailing, image: self.trailingIcon, color: self.trailingColor, onTapAction: self.trailingTapAction);
         } else {
             // Reset the right view to nil
             self.rightView = nil;
@@ -164,7 +164,7 @@ extension UITextFieldIconsDelegate
             // Add the delegate callback
             button.action = {
                 // Check to see which icon was tapped
-                if (side == .Leading) {
+                if (side == .leading) {
                     // Execute the delegate callback for the leading icon
                     self.delegateIcon?.UITextFieldIconsLeadingIcon_Tap(sender: self);
                 } else {
@@ -196,11 +196,11 @@ extension UITextFieldIconsDelegate
         viewContainer.addSubview(button);
         
         // Check to see which side the icon should be place on
-        if (side == .Leading) {
+        if (side == .leading) {
             // Add the icon to the leading side
             self.leftView = viewContainer;
             self.leftViewMode = .always;
-        } else if (side == .Trailing) {
+        } else if (side == .trailing) {
             // Add the icon to the trailing side
             self.rightView = viewContainer;
             self.rightViewMode = .always;
