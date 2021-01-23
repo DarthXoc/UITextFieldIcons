@@ -1,37 +1,29 @@
-//
-//  UITextField+Icons.swift
-//  UITextField+Icons
-//
-//  Created by Jason Cox on 4/2/20.
-//  Copyright © 2020 Jason Cox. All rights reserved.
-//
-
 import UIKit
 
-protocol UITextFieldIconsDelegate
+public protocol UITextFieldIconsDelegate
 {
-    func UITextFieldIconsLeadingIcon_Tap(sender: UITextField_Icons);
-    func UITextFieldIconsTrailingIcon_Tap(sender: UITextField_Icons);
+    func UITextFieldIconsLeadingIcon_Tap(sender: UITextFieldIcons);
+    func UITextFieldIconsTrailingIcon_Tap(sender: UITextFieldIcons);
 }
 
-extension UITextFieldIconsDelegate
+public extension UITextFieldIconsDelegate
 {
-    func UITextFieldIconsLeadingIcon_Tap(sender: UITextField_Icons)
+    func UITextFieldIconsLeadingIcon_Tap(sender: UITextFieldIcons)
     {
     }
     
-    func UITextFieldIconsTrailingIcon_Tap(sender: UITextField_Icons)
+    func UITextFieldIconsTrailingIcon_Tap(sender: UITextFieldIcons)
     {
     }
 }
 
-@IBDesignable class UITextField_Icons: UITextField {
+@IBDesignable open class UITextFieldIcons: UITextField {
     // MARK: - Delegates
     
     // Setup the delegate
     private var delegateIcon: UITextFieldIconsDelegate?;
 
-    override var delegate: UITextFieldDelegate?
+    override open var delegate: UITextFieldDelegate?
     {
         didSet
         {
@@ -56,19 +48,19 @@ extension UITextFieldIconsDelegate
     // MARK: - Interface Builder Properties
     
     // MARK: Leading icon properties
-    @IBInspectable internal var leadingColor: UIColor? {
+    @IBInspectable public var leadingColor: UIColor? {
         didSet {
             // Render the control
             self.renderControl();
         }
     };
-    @IBInspectable internal var leadingIcon: UIImage? {
+    @IBInspectable public var leadingIcon: UIImage? {
         didSet {
             // Render the control
             self.renderControl();
         }
     };
-    internal var leadingTapAction: (() -> Void)? {
+    public var leadingTapAction: (() -> Void)? {
         didSet {
             // Render the control
             self.renderControl();
@@ -76,19 +68,19 @@ extension UITextFieldIconsDelegate
     };
     
     // MARK: Trailing icon properties
-    @IBInspectable internal var trailingColor: UIColor? {
+    @IBInspectable public var trailingColor: UIColor? {
         didSet {
             // Render the control
             self.renderControl();
         }
     };
-    @IBInspectable internal var trailingIcon: UIImage? {
+    @IBInspectable public var trailingIcon: UIImage? {
         didSet {
             // Render the control
             self.renderControl();
         }
     };
-    internal var trailingTapAction: (() -> Void)? {
+    public var trailingTapAction: (() -> Void)? {
         didSet {
             // Render the control
             self.renderControl();
@@ -96,13 +88,13 @@ extension UITextFieldIconsDelegate
     };
     
     // MARK: Icon Spacing
-    @IBInspectable internal var iconSpacingLeft: CGFloat = 8 {
+    @IBInspectable public var iconSpacingLeft: CGFloat = 8 {
         didSet {
             // Render the control
             self.renderControl();
         }
     };
-    @IBInspectable internal var iconSpacingRight: CGFloat = 8 {
+    @IBInspectable public var iconSpacingRight: CGFloat = 8 {
            didSet {
                // Render the control
                self.renderControl();
