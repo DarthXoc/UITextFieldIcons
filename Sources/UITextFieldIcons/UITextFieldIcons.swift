@@ -1,12 +1,12 @@
 import UIKit
 
-protocol UITextFieldIconsDelegate
+public protocol UITextFieldIconsDelegate
 {
     func UITextFieldIconsLeadingIcon_Tap(sender: UITextFieldIcons);
     func UITextFieldIconsTrailingIcon_Tap(sender: UITextFieldIcons);
 }
 
-extension UITextFieldIconsDelegate
+public extension UITextFieldIconsDelegate
 {
     func UITextFieldIconsLeadingIcon_Tap(sender: UITextFieldIcons)
     {
