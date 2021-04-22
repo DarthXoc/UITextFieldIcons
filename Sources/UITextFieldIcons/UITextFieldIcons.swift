@@ -175,8 +175,16 @@ public extension UITextFieldIconsDelegate
                                                 bottom: 0,
                                                 right: self.iconSpacingRight);
         button.setImage(image, for: .normal);
+        
+        #if os(iOS)
         button.showsTouchWhenHighlighted = false;
-        button.tintColor = color ?? .placeholderText;
+        #endif
+        
+        if #available(iOS 13.0, tvOS 13.0, *) {
+            button.tintColor = color ?? .placeholderText
+        } else {
+            button.tintColor = color ?? .lightGray
+        };
         
         // Setup the container view
         let viewContainer: UIView = UIView(frame: CGRect(x: CGFloat.zero,
